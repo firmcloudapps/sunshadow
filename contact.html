@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="tailwind.config.js"></script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <div hx-get="partial/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
+    <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+        <!-- Hero Section -->
+        <header class="mb-20 max-w-3xl">
+            <p class="text-sm font-label font-semibold uppercase tracking-[0.2em] text-secondary mb-4">Connect With Us
+            </p>
+            <h1
+                class="text-5xl md:text-6xl font-headline font-extrabold text-primary tracking-tighter leading-tight mb-6">
+                Global Presence, <span class="text-outline">Personal Approach.</span></h1>
+            <p class="text-lg text-on-surface-variant leading-relaxed">Whether you are scaling your inventory or seeking
+                logistical expertise, our team across three continents is ready to streamline your supply chain.</p>
+        </header>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Form Section (60%) -->
+            <section class="lg:col-span-7 bg-surface-container-low p-10 rounded-xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-headline font-bold text-primary mb-8 tracking-tight">Direct Inquiry</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-label uppercase tracking-wider text-on-surface-variant">Full
+                                    Name</label>
+                                <input
+                                    class="w-full bg-surface-container-highest/30 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-0 py-3 text-on-surface placeholder:text-outline-variant"
+                                    placeholder="John Doe" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-label uppercase tracking-wider text-on-surface-variant">Email
+                                    Address</label>
+                                <input
+                                    class="w-full bg-surface-container-highest/30 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-0 py-3 text-on-surface placeholder:text-outline-variant"
+                                    placeholder="john@company.com" type="email" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-xs font-label uppercase tracking-wider text-on-surface-variant">Subject</label>
+                            <select
+                                class="w-full bg-surface-container-highest/30 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-0 py-3 text-on-surface">
+                                <option>Global Sourcing Inquiry</option>
+                                <option>Logistics &amp; Tracking</option>
+                                <option>Wholesale Partnerships</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-xs font-label uppercase tracking-wider text-on-surface-variant">Message</label>
+                            <textarea
+                                class="w-full bg-surface-container-highest/30 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-0 py-3 text-on-surface placeholder:text-outline-variant resize-none"
+                                placeholder="How can we help your business grow?" rows="5"></textarea>
+                        </div>
+                        <button
+                            class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-xl font-headline font-bold tracking-tight hover:bg-primary-container transition-all active:scale-[0.98]"
+                            type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <!-- Global Branch Offices (40%) -->
+            <section class="lg:col-span-5 space-y-8">
+                <!-- Canada HQ -->
+                <div class="bg-surface-container-lowest p-8 rounded-xl border-l-4 border-primary">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Headquarters</span>
+                        <span class="material-symbols-outlined text-primary" data-icon="domain">domain</span>
+                    </div>
+                    <h3 class="text-xl font-headline font-extrabold text-primary mb-2">Canada Office</h3>
+                    <p class="text-on-surface-variant text-sm leading-loose mb-6">
+                        1200 Bay Street, Suite 202<br />
+                        Toronto, ON M5R 2A5<br />
+                        Canada
+                    </p>
+                    <div class="space-y-3 pt-4 border-t border-surface-container-highest">
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="material-symbols-outlined text-primary text-lg" data-icon="call">call</span>
+                            <span class="font-medium">+1 (416) 555-0198</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="material-symbols-outlined text-primary text-lg" data-icon="mail">mail</span>
+                            <span class="font-medium">hq@sunshadowmerch.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nigeria Grid -->
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Lagos -->
+                    <div class="bg-surface-container-low p-8 rounded-xl">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Regional
+                                Hub</span>
+                            <span class="material-symbols-outlined text-primary"
+                                data-icon="location_city">location_city</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-extrabold text-primary mb-2">Lagos Office</h3>
+                        <p class="text-on-surface-variant text-sm leading-loose mb-4">
+                            Plot 14, Admiralty Way, Lekki Phase 1<br />
+                            Lagos, Nigeria
+                        </p>
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="material-symbols-outlined text-primary text-lg" data-icon="call">call</span>
+                            <span class="font-medium">+234 (1) 234-5678</span>
+                        </div>
+                    </div>
+                    <!-- Anambra -->
+                    <div class="bg-surface-container-low p-8 rounded-xl">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Logistics
+                                Center</span>
+                            <span class="material-symbols-outlined text-primary"
+                                data-icon="local_shipping">local_shipping</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-extrabold text-primary mb-2">Anambra Office</h3>
+                        <p class="text-on-surface-variant text-sm leading-loose mb-4">
+                            45 New Market Road, Onitsha<br />
+                            Anambra State, Nigeria
+                        </p>
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="material-symbols-outlined text-primary text-lg" data-icon="call">call</span>
+                            <span class="font-medium">+234 (80) 987-6543</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Map Section / Visual Anchor -->
+        <section class="mt-20 rounded-xl overflow-hidden h-[400px] relative">
+            <img alt="Global Logistics Network"
+                class="w-full h-full object-cover grayscale opacity-40 mix-blend-multiply"
+                data-alt="stylized architectural map of the world with subtle data connection lines in soft earthy tones"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAevCqTnAYasPCwVFd-Ajk76D2mzlqYsjjR_S21ukxJUyTGEJ7uMdXyvxMpJrYy15e7ovVdepgbQ8S2p1eHwCl6dDzH_i6yFQhXtV0nAxzGN9TQi_4WLuHbS1U-z81_WMzreo63ncXCvyJwUtZn5oAxvVp8M06mGMLM4Ritbv-zZ4xqU8Oe4mw2ugy9fg_pMlbtPZyI-yWEY1Id1rm8Dm1wE7oGBB_cDJbCkClvSWWI7WmjZTvl1TlWYRMLxYZW_NOY4iYio_M5X6Y" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+            <div class="absolute bottom-12 left-12">
+                <div class="bg-surface/90 glass-effect p-6 rounded-xl border border-outline-variant/15 max-w-sm">
+                    <p class="text-xs font-label font-bold text-primary uppercase tracking-[0.2em] mb-2">Operational
+                        Hours</p>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Monday — Friday: 08:00 AM - 06:00 PM
+                        (EST)<br />Global support available 24/7 for tracked logistics.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div hx-get="partial/footer.html" hx-trigger="load" hx-swap="outerHTML"></div>
+</body>
+
+</html>

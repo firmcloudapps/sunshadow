@@ -1,0 +1,32 @@
+<!-- Specializations Section -->
+<section class="py-24 bg-surface-container-low" x-data="{ categories: [] }" x-init="categories = await (await fetch('data/categories.json')).json()">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div class="max-w-2xl">
+                <span
+                    class="text-xs font-label font-bold tracking-[0.2em] text-secondary uppercase block mb-4">Strategic
+                    Categories</span>
+                <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tight">Our
+                    Specializations - Tiered Procurement Categories</h2>
+            </div>
+            <div class="h-[1px] flex-grow bg-outline-variant/30 mb-4 hidden md:block"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <template x-for="category in categories" :key="category.id">
+                <div class="group bg-surface-container-lowest p-4 rounded-xl hover:shadow-xl transition-all duration-300">
+                    <div class="aspect-square rounded-lg overflow-hidden mb-6 relative">
+                        <img :alt="category.imgAlt"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            :data-alt="category.imgDataAlt"
+                            :src="category.imgSrc" />
+                        <div
+                            class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-on-primary px-3 py-1 text-[10px] font-label font-bold tracking-widest uppercase"
+                            x-text="category.id"></div>
+                    </div>
+                    <h3 class="text-xl font-headline font-bold text-on-surface mb-2" x-text="category.title"></h3>
+                    <p class="text-sm text-on-surface-variant font-body" x-text="category.description"></p>
+                </div>
+            </template>
+        </div>
+    </div>
+</section>
