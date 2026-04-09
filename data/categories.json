@@ -5,11 +5,11 @@
     "description": "Premium agro crops for food processing, including sesame seeds, cocoa, cashew nuts, and pure organic edible oils.",
     "imgAlt": "Agricultural Commodities",
     "imgDataAlt": "Vast golden wheat field under a soft overcast sky, cinematic perspective, organic textures, muted earth tones",
-    "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtEL6XGDHaK-ouKP30oBv6l3WZTHvOGZdJmN5RcibZSV-AwjgM1PAPrTUDu1y7rODPKmZNT-NoZC3bWK4DwZdDVVxjCAi1oQV1vo2VgwQF4PhFRR0f6iGt7AvFDqWDWlhN9Ofva6iTCABR2Nl453Ri6KUA6Lmc4J5g5YdHY9XIkyAbaYfFztzaPZI_SG9PtWio7eqU0felxSbU6KulTZvsik1qqIlTkLwecW0hNj760QEUFmyb5iDAftUbmCL_WMQVZlZIeNk7LB4"
+    "imgSrc": "/images/grains.jpg"
   },
   {
     "id": "CAT_02",
-    "title": "Medical & Hospital Equipment",
+    "title": "Medical Equipment",
     "description": "Essential diagnostic tools, laboratory instruments, hospital consumables, and durable healthcare solutions.",
     "imgAlt": "Medical Equipment",
     "imgDataAlt": "High-precision medical imaging equipment in a sterile laboratory setting, clinical blue and white tones, soft lighting",
@@ -21,7 +21,7 @@
     "description": "Reliable sourcing of quality auto spare parts, OEM components, aftermarket accessories, and full vehicle exports.",
     "imgAlt": "Automotive Solutions",
     "imgDataAlt": "Detailed view of high-performance metallic engine components, sharp focus, industrial charcoal and silver palette",
-    "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCWfB7PIkekTB7_UaJhRxVzsAgKL3gtCRK70v8ttkuJG6TmChULQKTP3FV4PEBuJSRwKHHjgRdybX5fiYItvUoQnH5y3LLyPaSsJCIj9Mz6vtR9W7zuRGNvT063FsqvPqOS2TCmMXc9qRJQRfc9TCzUva8LCY3SQ9Kd1-bo1BS3vDMk7gnBt9ezamLV1cxK8qyYMfyjcSL8nV57OPVOv4Aj4NxQzsoz4BUXfxT1RaNseAXnC00-niGopXklEDoSeU_8xVUszZVw-N8"
+    "imgSrc": "/images/automotive.png"
   },
   {
     "id": "CAT_04",
@@ -29,6 +29,6 @@
     "description": "High-quality products including two-way radios, mobile phones, and essential gear for diverse industries.",
     "imgAlt": "Communication Equipment",
     "imgDataAlt": "Futuristic satellite array and server infrastructure, deep grays and tech-blue highlights, architectural composition",
-    "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuBNhsba3hzMlzv5nRzwFPwHJc9P0sjtMut9JUvQqjPrO6-bJKm17u_y1uc51_Llr4SaN40_wjbulY2cyCIF1cELOQLLx0lCUOjqEFRLJ3CVjM9x3Oc-QqDssnFiTUXB68EOpKkVCTmEgXgbzAqLf4cSVochJuVSIiM46xBigcStwiC3FhLw7h9TeGIBJFKBaX9P63lXYRPtopmi-Be8UPWwjUTRq_6csthSl17HOWo0-HDSr5sAqjOe-7ziusGNxWaeozWZd1SSXFk"
+    "imgSrc": "/images/communication.png"
   }
 ]
